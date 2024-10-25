@@ -13,5 +13,10 @@ pipeline{
                 echo 'deploying...'
             }
         }
+        stage('test git webhook') {
+            steps {
+                echo 'push detected...'
+            }
+        }
     }
 }
